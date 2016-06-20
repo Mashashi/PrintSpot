@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:de="http://de/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <de:register>
+         <!--Optional:-->
+         <customer>
+            <!--<name>name</name>
+-->
+            <name>name</name>
+            <!--Optional:-->
+            <email>mail</email>
+            <!--Optional:-->
+            <!--<birthday>1991-06-26'T'00:00:00Z</birthday>-->
+            <birthday>1991-06-26T00:00+0100</birthday>
+            <!--Optional:-->
+            <address>addr</address>
+            <!--Optional:-->
+            <taxNum>taxNum</taxNum>
+         </customer>
+      </de:register>
+   </soapenv:Body>
+</soapenv:Envelope>

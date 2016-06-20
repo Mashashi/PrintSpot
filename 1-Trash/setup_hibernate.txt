@@ -1,0 +1,13 @@
+//
+/*Configuration con = new Configuration();
+con.configure("hibernate.cfg.xml");
+SessionFactory SF = con.buildSessionFactory();
+Session session = SF.openSession();
+Transaction TR = session.beginTransaction();
+TR.commit();
+Customer custumer = new Customer("1", "2", "3", "4", "5");
+session.save(custumer);
+session.close();
+SF.close();
+de.database.get.Customer res = null;*/
+//
