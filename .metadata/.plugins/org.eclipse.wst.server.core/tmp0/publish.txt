@@ -1,0 +1,14 @@
+#GlassFish 3
+#Sat Jun 11 01:04:18 CEST 2016
+org.eclipse.jst.jee.server\:AssemblyPolicies=C\:\\Program Files\\glassfish-4.1.1\\glassfish\\domains\\domain1\\eclipseApps\\AssemblyPolicies
+org.eclipse.jst.jee.server\:AssemblyCustomerMngmt=C\:\\Program Files\\glassfish-4.1.1\\glassfish\\domains\\domain1\\eclipseApps\\AssemblyCustomerMngmt
+org.eclipse.jst.jee.server\:Policies=C\:\\Program Files\\glassfish-4.1.1\\glassfish\\domains\\domain1\\eclipseApps\\Policies
+org.eclipse.jst.jee.server\:AssemblyWebServices=C\:\\Program Files\\glassfish-4.1.1\\glassfish\\domains\\domain1\\eclipseApps\\AssemblyWebServices
+org.eclipse.jst.jee.server\:CustomerMngmt=C\:\\Program Files\\glassfish-4.1.1\\glassfish\\domains\\domain1\\eclipseApps\\CustomerMngmt
+org.eclipse.jst.jee.server\:EmployeeApproval=C\:\\Program Files\\glassfish-4.1.1\\glassfish\\domains\\domain1\\eclipseApps\\EmployeeApproval
+org.eclipse.jst.jee.server\:1CustomerRegister=C\:\\Program Files\\glassfish-4.1.1\\glassfish\\domains\\domain1\\eclipseApps\\1CustomerRegister
+org.eclipse.jst.jee.server\:CustomerRegister=C\:\\Program Files\\glassfish-4.1.1\\glassfish\\domains\\domain1\\eclipseApps\\CustomerRegister
+org.eclipse.jst.jee.server\:Assembly=C\:\\Program Files\\glassfish-4.1.1\\glassfish\\domains\\domain1\\eclipseApps\\Assembly
+org.eclipse.jst.jee.server\:Assembly3=C\:\\Program Files\\glassfish-4.1.1\\glassfish\\domains\\domain1\\eclipseApps\\Assembly3
+org.eclipse.jst.jee.server\:2EmployeeApproval=C\:\\Program Files\\glassfish-4.1.1\\glassfish\\domains\\domain1\\eclipseApps\\2EmployeeApproval
+org.eclipse.jst.jee.server\:WebServices=C\:\\Program Files\\glassfish-4.1.1\\glassfish\\domains\\domain1\\eclipseApps\\WebServices

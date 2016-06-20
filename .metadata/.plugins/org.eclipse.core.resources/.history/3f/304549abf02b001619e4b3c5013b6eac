@@ -1,0 +1,37 @@
+package de.database.insert;
+
+import java.io.Serializable;
+import java.text.ParseException;
+
+import de.validation.ValidationException;
+import de.validation.Utils;
+
+public class Customer implements Serializable{
+	
+	private static final long serialVersionUID = 1754316980605977737L;
+	
+	public String name;
+	public String email;
+	public String birthday;
+	public String address;
+	public String tax_num;
+	
+	public Customer(String name, String email, String birthday, String address, String tax_num) {
+		this.name = name;
+		this.email = email;
+		this.birthday = birthday;
+		this.address = address;
+		this.tax_num = tax_num;
+	}
+	
+	public void validate() throws ValidationException {
+		StringBuffer report = new StringBuffer("");
+		try {
+			Utils.parseDate(birthday);
+		} catch (ParseException e) {
+			Utils.parseDateError(report, "birthday", birthday);
+		}
+		if(!report.toString().equals("")) 
+			throw new ValidationException(report);
+	}
+}

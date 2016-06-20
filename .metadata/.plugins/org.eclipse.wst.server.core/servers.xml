@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="1" glassfish.adminname="admin" glassfish.adminserverportnumber="4848" glassfish.domainpath="C:/Program Files/glassfish-4.1.1/glassfish/domains/domain1" glassfish.jarDeploy="false" glassfish.keepSessions="true" glassfish.serverportnumber="8080" glassfish.useAnonymousConnection="true" hostname="localhost" id="GlassFish 4.1.1 at localhost [domain1]" name="GlassFish 4.1.1 at localhost [domain1]" runtime-id="GlassFish 4.1.1" server-type="org.glassfish.jst.server.glassfish4" server-type-id="org.glassfish.jst.server.glassfish4" start-timeout="240" stop-timeout="240" timestamp="138">
+    <list key="modules" value0="1CustomerRegister::org.eclipse.jst.jee.server:1CustomerRegister::jst.web::3.1" value1="2EmployeeApproval::org.eclipse.jst.jee.server:2EmployeeApproval::jst.web::3.1" value2="AssemblyPolicies::org.eclipse.jst.jee.server:AssemblyPolicies::jst.ear::7.0" value3="AssemblyWebServices::org.eclipse.jst.jee.server:AssemblyWebServices::jst.ear::7.0"/>
+  </server>
+</servers>

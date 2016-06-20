@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+	 
+    <persistence-unit name ="pu1">
+    	<provider>org.hibernate.jpa.HibernatePersistence</provider>
+    	<jta-data-source>jdbc/user_list-Pool</jta-data-source> 
+    	<properties>
+	    	<property name="dialect" value="org.hibernate.dialect.SQLiteDialect" />
+	        <property name="javax.persistence.jdbc.driver" value="org.sqlite.JDBC" />
+	        <property name="hibernate.show_sql" value="true" />
+	        <property name="format_sql" value="true" />
+	        <property name="hibernate.connection.charSet" value="UTF-8" />
+	        <property name="hibernate.hbm2ddl.auto" value="create" />
+        </properties>
+    </persistence-unit> 
+</persistence>

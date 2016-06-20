@@ -1,0 +1,15 @@
+package de;
+import javax.ejb.Remote;
+
+@Remote
+public interface CustomerMngmtRemote {
+ 
+    Integer register(de.database.insert.Customer c);
+    
+    de.database.get.Customer get(Integer id);
+    
+    void discard(Integer id);
+    
+    void approve(Integer idEmployee, Integer id);
+    
+}

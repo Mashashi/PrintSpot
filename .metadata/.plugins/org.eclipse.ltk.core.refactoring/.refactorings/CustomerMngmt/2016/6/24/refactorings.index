@@ -1,0 +1,43 @@
+1465214337564	Rename type 'LibrarySessionBean'
+1465214361697	Rename type 'LibrarySessionBeanRemote'
+1465220831722	Copy compilation unit
+1465220928574	Copy compilation unit
+1465222228868	Copy compilation unit
+1465238178736	Rename package 'de.database'
+1465239160420	Copy compilation unit
+1465239194310	Copy compilation unit
+1465239891672	Extract interface 'Policies'
+1465239978136	Move compilation units
+1465239984830	Delete element
+1465239991210	Move package
+1465240587784	Rename local variable 'bean'
+1465240631812	Copy compilation unit
+1465254034509	Copy compilation unit
+1465302041582	Delete element
+1465306875673	Move 'persistence.xml' to 'META-INF'
+1465307496826	Move 'persistence.xml' to 'CustomerMngmt'
+1465308291659	Move 'persistence.xml' to 'META-INF'
+1465311338069	Move 'persistence.xml' to 'CustomerMngmt'
+1465311384709	Move 'persistence.xml' to 'META-INF'
+1465311540135	Move 'persistence.xml' to 'CustomerMngmt'
+1465317661465	Move 'persistence.xml' to 'META-INF'
+1465324094773	Copy compilation unit
+1465331582344	Copy package
+1465544303263	Copy compilation unit
+1465553546685	Rename package 'de.validation.ValidationException'
+1465553555845	Move compilation unit
+1465583320043	Delete element
+1465583324152	Delete element
+1465583359262	Delete element
+1465583388550	Move compilation unit
+1465583486886	Copy package
+1465584191287	Move compilation unit
+1465584333438	Delete element
+1465584348066	Move compilation unit
+1465584668919	Move compilation unit
+1465584677414	Delete element
+1465584697848	Move compilation unit
+1465584701197	Delete element
+1465584708400	Delete element
+1465584712309	Move package
+1465593278252	Copy folder

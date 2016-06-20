@@ -1,0 +1,30 @@
+package de;
+import java.io.IOException;
+
+import javax.websocket.OnClose;
+import javax.websocket.OnMessage;
+import javax.websocket.OnOpen; 
+import javax.websocket.Session; 
+import javax.websocket.server.ServerEndpoint; 
+
+
+@MessageDriven(
+		activationConfig = { @ActivationConfigProperty(
+				propertyName = "destination", propertyValue = "PhysicalQueueOpened"), 
+				@ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue")
+		}, 
+		mappedName = "PhysicalQueue")
+@ServerEndpoint("/notifyRegistration") 
+public class WebSocketTest { 
+	@OnMessage 
+	public void onMessage(String message, Session session) throws IOException, InterruptedException { 
+		System.out.println("Message: " + message); session.getBasicRemote().sendText("Hello Mr. " + message); 
+	} 
+	@OnOpen public void onOpen() { 
+		System.out.println("Client connected"); 
+	} 
+	@OnClose 
+	public void onClose() { 
+		System.out.println("Connection closed"); 
+	} 
+}

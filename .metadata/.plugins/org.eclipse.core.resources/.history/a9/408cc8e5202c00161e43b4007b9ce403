@@ -1,0 +1,20 @@
+package de;
+
+import com.sun.grizzly.tcp.Request;
+import com.sun.grizzly.websockets.WebSocket;
+import com.sun.grizzly.websockets.WebSocketApplication;
+
+public class NotifyRegistration extends WebSocketApplication{
+
+	@Override
+	public boolean isApplicationRequest(Request req) {
+		System.out.println("yupi!!!");
+		return req.requestURI().toString().endsWith("/m");
+	}
+	
+	@Override
+	public void onMessage(WebSocket socket, String text) {
+		super.onMessage(socket, text);
+	} 
+	
+}

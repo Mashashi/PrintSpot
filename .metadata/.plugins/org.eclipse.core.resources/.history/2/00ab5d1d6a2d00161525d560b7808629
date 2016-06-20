@@ -1,0 +1,45 @@
+package de.database.entities;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Basic;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+
+@Entity
+@Table(name="Customer")
+public class Customer implements Serializable{
+	
+	private static final long serialVersionUID = -2515008314339222645L;
+	
+	/*
+	 http://stackoverflow.com/questions/2040836/why-is-public-not-allowed-for-properties-in-jpa-entities
+	 With public fields, there would be no way for proxying to work reliably -- if someone accesses a field directly, then there is no simple way for the persistence framework to intercept that call and (say) initialize the containing object, if it's a proxy.
+	 */
+	@Id private Integer id_customer;
+	@Basic private String name;
+	@Basic private String email;
+	@Transient private public Date birthday;
+	@Basic private String address;
+	@Basic private String tax_num;
+	@Basic private Integer id_register;
+	
+	public Customer(){}
+	
+	public Customer(Integer id_customer, String name, String email, Date birthday, String address, String tax_num, Integer id_register) {
+		super();
+		this.id_customer = id_customer;
+		this.name = name;
+		this.email = email;
+		this.birthday = birthday;
+		this.address = address;
+		this.tax_num = tax_num;
+		this.id_register = id_register;
+	}
+	
+}

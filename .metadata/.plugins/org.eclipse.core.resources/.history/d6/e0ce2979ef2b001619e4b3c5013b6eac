@@ -1,0 +1,9 @@
+package de;
+import javax.ejb.Remote;
+
+@Remote
+public interface CustomerMngmtRemote {
+ 
+    Integer register(Customer c);
+    
+}

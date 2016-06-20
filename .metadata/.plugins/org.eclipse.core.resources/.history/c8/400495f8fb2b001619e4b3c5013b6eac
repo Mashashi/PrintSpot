@@ -1,0 +1,71 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Customer Registration</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="//jqueryvalidation.org/files/demo/css/cmxform.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- https://jqueryvalidation.org/documentation/ -->
+	<script src="https://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+	
+	
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	
+	<script>
+		$(function() {
+		    $( "#datepicker" ).datepicker();
+			$( "#datepicker" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
+		});
+		
+		
+	</script>
+</head>
+<body>
+	<form class="cmxform" id="commentForm">
+	<p>
+		<strong>Name</strong><br />
+		<input name="name" type="text" required />
+	</p>
+	<p>
+		<strong>Birthday</strong><br />
+		<input name="birthday" type="text" id="datepicker" />
+	</p>
+	<p>
+		<strong>Email</strong><br />
+		<input name="email" type="email" required/>
+	</p>
+	<p>
+		<strong>Address</strong><br />
+		<input name="addr" type="text" required/>
+	</p>
+	<p>
+		<strong>Tax Number</strong><br />
+		<input name="tax_num"/>
+	</p>
+	<p>
+      <input class="submit" type="submit" value="Submit">
+    </p>
+	</form>
+	<script>
+	$( "#commentForm" ).validate({
+		submitHandler: function(form) {  
+	       if ($(form).valid()){
+	    	   console.log("ok")
+	       } 
+	           //form.submit(); 
+	       return false; // prevent normal form posting
+	     },
+		rules: {
+		tax_num: {
+	      required: true,
+	      number: true
+	    }
+	  }
+	});
+	</script>
+</body>
+</html>

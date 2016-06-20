@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.EditDependencyDialog">
+		<item value="480" key="width"/>
+		<item value="443" key="x"/>
+		<item value="69" key="y"/>
+		<item value="450" key="height"/>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="480" key="width"/>
+		<item value="443" key="x"/>
+		<item value="16" key="y"/>
+		<item value="530" key="height"/>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="Commons"/>
+			<item value="AssemblyCustomerMngmt"/>
+			<item value="1CustomerRegister"/>
+			<item value="Policies"/>
+			<item value="Assembly3"/>
+			<item value="Assembly2"/>
+			<item value="Assembly"/>
+			<item value="CustomerMngmt"/>
+			<item value="EmployeeApproval"/>
+			<item value="Database"/>
+			<item value="WebServices"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Commons"/>
+			<item value="AssemblyCustomerMngmt"/>
+			<item value="1CustomerRegister"/>
+			<item value="Policies"/>
+			<item value="Assembly3"/>
+			<item value="Assembly2"/>
+			<item value="Assembly"/>
+			<item value="CustomerMngmt"/>
+			<item value="EmployeeApproval"/>
+			<item value="Database"/>
+			<item value="WebServices"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

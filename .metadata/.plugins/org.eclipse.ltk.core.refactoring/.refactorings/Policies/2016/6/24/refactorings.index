@@ -1,0 +1,40 @@
+1465240046001	Rename type 'Policies'
+1465240056701	Rename type 'Utils'
+1465240101105	Rename method 'parseDateError'
+1465240206500	Copy compilation unit
+1465240306468	Copy compilation unit
+1465556229314	Copy compilation unit
+1465556418137	Move compilation unit
+1465556426701	Move compilation unit
+1465556474633	Copy compilation unit
+1465556489294	Copy compilation unit
+1465557421345	Move compilation units
+1465557494632	Copy compilation units
+1465557506406	Copy compilation units
+1465557512601	Delete element
+1465557658487	Move package
+1465560657720	Move folder
+1465561342351	Copy folder
+1465561349195	Copy folder
+1465561630924	Rename resource 'libs'
+1465561727738	Rename package 'libs'
+1465561732423	Rename resource 'libs'
+1465561956055	Delete element
+1465563064799	Delete element
+1465571045021	Delete element
+1465571206963	Move 'Commons-0.0.1-SNAPSHOT.jar' to 'WEB-INF'
+1465571257515	Move 'application.xml' to 'META-INF'
+1465571301845	Move 'Commons-0.0.1-SNAPSHOT.jar' to 'lib'
+1465571425030	Rename resource 'application.xml'
+1465571823031	Move package
+1465571954938	Move folder
+1465572005713	Move '_application.xml' to 'META-INF'
+1465572009517	Rename resource '_application.xml'
+1465572151279	Move package
+1465572470593	Rename resource 'Commons-0.0.1-SNAPSHOT.jar'
+1465573355212	Rename resource 'a.jar'
+1465576964378	Rename resource 'application.xml'
+1465581668066	Delete element
+1465581802185	Delete element
+1465582923618	Move package
+1465583561101	Move compilation unit

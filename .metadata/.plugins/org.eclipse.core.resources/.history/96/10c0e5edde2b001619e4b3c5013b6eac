@@ -1,0 +1,10 @@
+package de;
+import java.util.List;
+import javax.ejb.Remote;
+ 
+@Remote
+public interface CustomerMngmtRemote {
+ 
+    int register(String bookName);
+    
+}
