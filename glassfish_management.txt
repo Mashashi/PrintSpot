@@ -1,0 +1,77 @@
+C:\Program Files\glassfish-4.1.1\glassfish\bin
+
+asadmin start-domain --verbose
+
+asadmin start-domain --debug --verbose
+Default port for debugging 9009
+
+asadmin create-jdbc-connection-pool --restype javax.sql.DataSource --datasourceclassname org.sqlite.SQLiteConnectionPoolDataSource --property "url=jdbc\\\\:sqlite\\\\:C\\\\:/sqlite/tools/printspot.db" user_list-Pool
+
+asadmin create-jdbc-resource --connectionpoolid user_list-Pool jdbc/user_list-Pool
+
+Put missing classes at
+
+C:\Program Files\glassfish-4.1.1\glassfish\domains\domain1\lib
+
+C:\Program Files\glassfish-4.1.1\glassfish\domains\domain1\logs
+
+
+
+Enabled websockets
+asadmin set configs.config.server-config.network-config.protocols.protocol.http-listener-1.http.websockets-support-enabled=true
+
+Grizzly is shipped with glassfish
+
+
+
+App configuration files
+C:\Program Files\glassfish-4.1.1\glassfish\domains\domain1\eclipseApps\CustomerMngmt
+
+
+-javaagent:C:\openjpa-all-2.4.1.jar
+asadmin list-jvm-options
+asadmin create-jvm-options "-javaagent\:/openjpa-all-2.4.1.jar"
+asadmin delete-jvm-options "-javaagent\:/openjpa-all-2.4.1.jar"
+asadmin restart-domain
+
+
+
+mvn clean process-classes antrun:run@ant-execute package glassfish:redeploy
+mvn clean process-classes antrun:run@ant-execute package glassfish:deploy
+
+
+mvn clean antrun:run@ant-execute package glassfish:deploy
+mvn clean antrun:run@ant-execute package glassfish:deploy --debug
+mvn clean package glassfish:deploy
+mvn clean package
+
+java:global/Policies/Defined
+
+
+
+https://docs.oracle.com/cd/E18930_01/html/821-2417/gilfm.html#giulr
+
+
+asadmin list-applications --type web
+
+asadmin list-sub-components --app name Assembly Policies.jar
+
+
+
+
+
+
+Compile module with open jpa such as CustomerMngmt
+cd Commons
+mvn clean process-classes antrun:run@ant-execute package
+cd ..
+cd CustomerMngmt
+mvn clean package
+cd ..
+cd AssemblyCustomerMngmt
+mvn clean antrun:run@ant-execute1 package glassfish:redeploy
+
+or
+
+mvn clean antrun:run@commons antrun:run@customermngmt package glassfish:redeploy
+cd ..
